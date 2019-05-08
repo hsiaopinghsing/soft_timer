@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+".\objects\main.o"
+".\objects\soft_timer.o"
+".\objects\stm32f10x_it.o"
+".\objects\debug.o"
+".\objects\demo.o"
+".\objects\user_timer.o"
+".\objects\timer.o"
+".\objects\usart.o"
+".\objects\misc.o"
+".\objects\stm32f10x_rcc.o"
+".\objects\stm32f10x_gpio.o"
+".\objects\stm32f10x_usart.o"
+".\objects\stm32f10x_tim.o"
+".\objects\system_stm32f10x.o"
+".\objects\core_cm3.o"
+".\objects\startup_stm32f10x_md.o"
+--strict --scatter ".\Objects\SoftTimer.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\SoftTimer.map" -o .\Objects\SoftTimer.axf

@@ -1,0 +1,30 @@
+SoftTimer
+===================================================================
+
+2018.11.6
+-------------------------------
+1.stm32f10x_it.c  添加函数TIM4_IRQHandler()；
+2.添加文件demo.c/h；
+3.soft_timer.c/h  添加枚举变量tmrMode，softTimer添加成员mode，period，
+                  softTimer_Init()添加对mode，period的初始化，softTimer_Start()添加参数mode和对period的赋值操作，
+				  softTimer_Update()修改SOFT_TIMER_TIMEOUT操作；
+
+
+2018.11.4
+-------------------------------
+1.timer.c/h  TIM4_Init()加入参数period_ms，修改TIM4_Init()；
+2.soft_timer.c/h  callback()，softTimer_Start()的参数1改为void*型，
+                  结构体softTimer的成员data改为void*型，data改名argv，len改名argc；
+
+
+2018.10.30
+-------------------------------
+1.新建工程；
+2.usart.c/h  删除多余内容，保留USART1_Init()和UART_NVIC_Config()；
+
+
+
+
+- - - - - - - - - - - - -
+马可波罗包
+https://blog.csdn.net/qq_26904271
